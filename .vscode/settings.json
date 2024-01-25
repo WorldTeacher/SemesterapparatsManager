@@ -1,0 +1,30 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.trunk/*actions/": true,
+    "**/.trunk/*logs/": true,
+    "**/.trunk/*notifications/": true,
+    "**/.trunk/*out/": true,
+    "**/.trunk/*plugins/": true,
+    "**/.history": true,
+    "**/.pytest_cache": true,
+    ".pytest_cache": true,
+    "**/__pycache__": true,
+    "__pycache__": true
+  },
+  "explorerExclude.backup": {},
+  "python.testing.unittestEnabled": false,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./test",
+    "-p",
+    "*_test.py"
+  ],
+  "python.testing.pytestEnabled": true,
+}
