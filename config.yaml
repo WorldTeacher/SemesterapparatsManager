@@ -1,0 +1,79 @@
+default_apps: true
+save_path: C:\Users\aky547\Desktop\testfolder\
+custom_applications:
+- name: Text files
+  extensions:
+  - txt
+  - md
+  - rst
+  application: Notepad
+- name: CSV files
+  extensions:
+  - csv
+  application: Excel
+- name: pdf files
+  extensions:
+  - pdf
+  application: Firefox
+- name: Word files
+  extensions:
+  - docx
+  - doc
+  application: Word
+- name: Excel files
+  extensions:
+  - xlsx
+  - xls
+  application: Excel
+database:
+  name: database.db
+  path: C:\Users\aky547\Desktop\semap\db\
+subjects:
+- name: Biologie
+  aliases: null
+- name: Chemie
+  aliases: null
+- name: Deutsch
+  aliases: null
+- name: Englisch
+  aliases: null
+- name: Erziehungswissenschaft
+  aliases: null
+- name: Französisch
+  aliases: null
+- name: Geographie
+  aliases: null
+- name: Geschichte
+  aliases: null
+- name: Gesundheitspädagogik
+  aliases: null
+- name: Haushalt / Textil
+  aliases: null
+- name: Kunst
+  aliases: null
+- name: Mathematik / Informatik
+  aliases: null
+- name: Medien in der Bildung
+  aliases: null
+- name: Musik
+  aliases: null
+- name: Philosophie
+  aliases: null
+- name: Physik
+  aliases: null
+- name: Politikwissenschaft
+  aliases: null
+- name: Prorektorat Lehre und Studium
+  aliases: null
+- name: Psychologie
+  aliases: null
+- name: Soziologie
+  aliases: null
+- name: Sport
+  aliases: null
+- name: Technik
+  aliases: null
+- name: Theologie
+  aliases: null
+- name: Wirtschaftslehre
+  aliases: null
