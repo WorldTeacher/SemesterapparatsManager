@@ -9,7 +9,7 @@ from typing import Any, List, Optional
 from pydantic import BaseModel, Field
 
 from src.logic.dataclass import BookData
-from log import MyLogger
+from src.logic.log import MyLogger
 
 logger = MyLogger("transformers.py")
 

@@ -125,11 +125,18 @@
 #     data = ['YH 6876 S344', 'YM 3500 L925', 'CU 3200 W862', 'CW 6940 W842', 'CZ 1360 M379', 'CU 3800 V445', 'CU 3100 L948', 'CU 3200 H379 (3)', 'YC 7093 K95', 'CU 8590 E34 (2)', 'MS 6410 L744 (2)+1', 'CUS778', 'Psy K 120: 125 b', 'Psy L 170: 66', 'MR 2600 M474 (12)+16', 'Psy K 760: 19', 'Psy K 110: 92', 'Psy K 400: 45 a', 'CD 20/10,6']
 #     main(data)
 
-from src.backend.database import Database
-import pickle
-db = Database()
+# from src.backend.database import Database
+# import pickle
+# db = Database()
 
-query="SELECT * from media where id=1"
-_data = db.database.execute(query).fetchall()
-var = _data[0][1]
-print(pickle.loads(var))
+# query="SELECT * from media where id=1"
+# _data = db.database.execute(query).fetchall()
+# var = _data[0][1]
+# print(pickle.loads(var))
+from src.backend.database_rewrite import Database
+from omegaconf import OmegaConf
+
+config = OmegaConf.load("config.yaml")
+
+subjects = [subject["name"] for subject in config.subjects]
+print(subjects)

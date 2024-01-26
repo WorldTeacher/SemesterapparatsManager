@@ -8,12 +8,12 @@ from typing import Any
 
 from omegaconf import OmegaConf
 
-from src.backend.db import main as template
+
 # from src.data import pickles
 import pickle
 from src.logic.constants import SEMAP_MEDIA_ACCOUNTS
 from src.logic.dataclass import ApparatData, BookData
-from log import MyLogger
+from src.logic.log import MyLogger
 from icecream import ic
 config = OmegaConf.load("config.yaml")
 
@@ -35,7 +35,6 @@ class Database:
         pass
     def create_database(self):
         #create database from template
-        template(self.database_path)
         subjects = config.subjects
         for subject in subjects:
             self.cur.execute(f"INSERT INTO subjects (name) VALUES ('{subject}')")

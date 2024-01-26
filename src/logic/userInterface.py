@@ -18,7 +18,7 @@ from src.logic import c_sort
 from src.backend.database import Database
 from src.logic.constants import APP_NRS, PROF_TITLES
 from src.logic.dataclass import ApparatData, BookData, MailData
-from log import MyLogger
+from src.logic.log import MyLogger
 from src.logic.threads import BookGrabber,AvailChecker
 from src.ui import (
     App_Ext_Dialog,

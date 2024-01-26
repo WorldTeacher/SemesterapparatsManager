@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from omegaconf import OmegaConf
 
 from src.logic.dataclass import BookData
-from log import MyLogger
+from src.logic.log import MyLogger
 from src.transformers import ARRAYData, BibTeXData, COinSData, RDSData, RISData
 #import sleep_and_retry decorator to retry requests
 from ratelimit import limits, sleep_and_retry

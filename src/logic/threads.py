@@ -4,7 +4,7 @@ import time
 from PyQt6.QtCore import QThread, pyqtSignal
 
 from src.backend.database import Database
-from log import MyLogger
+from src.logic.log import MyLogger
 from src.transformers import RDS_AVAIL_DATA
 from src.logic.webrequest import BibTextTransformer, WebRequest
 import sqlite3

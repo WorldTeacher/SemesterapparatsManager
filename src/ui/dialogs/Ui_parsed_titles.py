@@ -8,7 +8,7 @@
 
 from PyQt6 import QtCore, QtGui, QtWidgets
 
-from log import MyLogger
+from src.logic.log import MyLogger
 from src.logic.threads import AutoAdder
 
 logger = MyLogger("AutoTitleAdder")
