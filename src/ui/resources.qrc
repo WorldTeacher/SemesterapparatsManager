@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="warn_image">
+    <file>icons/warning.png</file>
+  </qresource>
+  <qresource prefix="critical">
+    <file>icons/critical.png</file>
+  </qresource>
+  <qresource prefix="information">
+    <file>icons/information.png</file>
+  </qresource>
+  <qresource prefix="question">
+    <file>icons/question.png</file>
+  </qresource>
+</RCC>

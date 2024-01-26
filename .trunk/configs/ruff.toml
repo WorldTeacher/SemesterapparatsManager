@@ -1,0 +1,22 @@
+# Generic, formatter-friendly config.
+select = ["B", "D3", "D4", "E", "F"]
+
+# Never enforce `E501` (line length violations). This should be handled by formatters.
+ignore = ["E501","F401"]
+exclude = [
+    ".trunk",
+    ".git",
+    ".github",
+    "build",
+    "dist",
+    "docs",
+    "examples",
+    "tests",
+    ".history",
+    ".vscode",
+    "venv",
+    ".venv",
+    "__pycache__",
+]
+line-length = 88
+indent-width = 4
