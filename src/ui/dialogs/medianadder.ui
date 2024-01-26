@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>637</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>47</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Signatur</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>47</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modus</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>40</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>ARRAY</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BibTeX</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COinS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RIS</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Signatur / ISBN</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>47</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Queue</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>90</y>
+     <width>301</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="uniformRowHeights">
+     <bool>true</bool>
+    </property>
+    <property name="itemsExpandable">
+     <bool>false</bool>
+    </property>
+    <property name="expandsOnDoubleClick">
+     <bool>false</bool>
+    </property>
+    <attribute name="headerCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="headerDefaultSectionSize">
+     <number>96</number>
+    </attribute>
+    <attribute name="headerHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="headerMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <attribute name="headerStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Datensatz\Metadata</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Array</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>BibTeX</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>COinS</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>RIS</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>PPN</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Signatur</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="background">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Autor</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ISBN</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Jahr</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Auflage</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sprache</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Herausgeber</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Seiten</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Titel</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Link</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>281</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Belegbare Felder per Anbieter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Anzahl:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="list_amount">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>47</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>156</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="l_add">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>10</y>
+     <width>21</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>Clicken oder Shift Enter drücken um den Eintrag hinzuzufügen</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources.qrc">
+     <normaloff>:/information/icons/information.png</normaloff>:/information/icons/information.png</iconset>
+   </property>
+   <property name="shortcut">
+    <string>Shift+Return</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>treeWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>461</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>461</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

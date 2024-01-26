@@ -25,6 +25,7 @@ lint:
     - trivy
     - trufflehog
   enabled:
+    - osv-scanner@1.6.1
     - sql-formatter@15.1.2
     - sqlfluff@2.3.5
     - isort@5.13.2

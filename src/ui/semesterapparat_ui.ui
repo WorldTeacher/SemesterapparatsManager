@@ -1,0 +1,2890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1593</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1278</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Semesterapparatsmanagement</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1271</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="tab">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <attribute name="title">
+             <string>Anlegen</string>
+            </attribute>
+            <widget class="QWidget" name="horizontalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>1261</width>
+               <height>163</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <layout class="QFormLayout" name="formLayout">
+                <item row="1" column="0">
+                 <layout class="QVBoxLayout" name="verticalLayout_2">
+                  <item>
+                   <spacer name="verticalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="load_app">
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="toolTip">
+                     <string>Load the Semesterapparate from the database</string>
+                    </property>
+                    <property name="text">
+                     <string>App. aufrufen</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="create_new_app">
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="text">
+                     <string>neu. App anlegen</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="cancel_active_selection">
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="text">
+                     <string>Auswahl abbrechen</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QTableWidget" name="tableWidget_apparate">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="sizeAdjustPolicy">
+                   <enum>QAbstractScrollArea::AdjustToContents</enum>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::SelectedClicked</set>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="textElideMode">
+                   <enum>Qt::ElideMiddle</enum>
+                  </property>
+                  <property name="sortingEnabled">
+                   <bool>true</bool>
+                  </property>
+                  <attribute name="horizontalHeaderCascadingSectionResizes">
+                   <bool>true</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string>AppNr</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>App Name</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Professor</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>gültig bis</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Dauerapparat</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>KontoNr</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+                </item>
+                <item row="3" column="0">
+                 <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="Line" name="line">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>160</y>
+               <width>1261</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QWidget" name="gridLayoutWidget_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>180</y>
+               <width>1261</width>
+               <height>511</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="1" column="0">
+               <widget class="QGroupBox" name="app_group_box">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>210</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="title">
+                 <string>Apparatsdetails</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <widget class="QTableWidget" name="dokument_list">
+                 <property name="geometry">
+                  <rect>
+                   <x>765</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>181</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                   <kerning>false</kerning>
+                  </font>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
+                 <property name="acceptDrops">
+                  <bool>true</bool>
+                 </property>
+                 <property name="sizeAdjustPolicy">
+                  <enum>QAbstractScrollArea::AdjustToContents</enum>
+                 </property>
+                 <property name="dragEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="dragDropMode">
+                  <enum>QAbstractItemView::DropOnly</enum>
+                 </property>
+                 <property name="defaultDropAction">
+                  <enum>Qt::LinkAction</enum>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::SingleSelection</enum>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Dokumentname</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Dateityp</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Neu?</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>path</string>
+                  </property>
+                 </column>
+                </widget>
+                <widget class="QFrame" name="frame">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>30</y>
+                   <width>1241</width>
+                   <height>151</height>
+                  </rect>
+                 </property>
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QComboBox" name="drpdwn_prof_title">
+                  <property name="geometry">
+                   <rect>
+                    <x>110</x>
+                    <y>50</y>
+                    <width>69</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="editable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_5">
+                  <property name="geometry">
+                   <rect>
+                    <x>250</x>
+                    <y>20</y>
+                    <width>91</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Apparatsname</string>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="sem_winter">
+                  <property name="geometry">
+                   <rect>
+                    <x>340</x>
+                    <y>50</y>
+                    <width>82</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="text">
+                   <string>Winter</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_4">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>80</y>
+                    <width>71</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Prof. Name</string>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="drpdwn_app_nr">
+                  <property name="geometry">
+                   <rect>
+                    <x>110</x>
+                    <y>20</y>
+                    <width>69</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhDigitsOnly</set>
+                  </property>
+                  <property name="editable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="app_name">
+                  <property name="geometry">
+                   <rect>
+                    <x>340</x>
+                    <y>20</y>
+                    <width>113</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="sem_sommer">
+                  <property name="geometry">
+                   <rect>
+                    <x>340</x>
+                    <y>70</y>
+                    <width>82</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="text">
+                   <string>Sommer</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>61</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Prof. Titel</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>270</x>
+                    <y>60</y>
+                    <width>61</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Semester</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="sem_year">
+                  <property name="geometry">
+                   <rect>
+                    <x>410</x>
+                    <y>60</y>
+                    <width>113</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="maxLength">
+                   <number>4</number>
+                  </property>
+                  <property name="placeholderText">
+                   <string>2023</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>101</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Apparatsnummer</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_apparat_save">
+                  <property name="geometry">
+                   <rect>
+                    <x>260</x>
+                    <y>120</y>
+                    <width>75</width>
+                    <height>23</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Speichern</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_apparat_apply">
+                  <property name="geometry">
+                   <rect>
+                    <x>350</x>
+                    <y>120</y>
+                    <width>75</width>
+                    <height>23</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Aktualisieren</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="check_eternal_app">
+                  <property name="geometry">
+                   <rect>
+                    <x>340</x>
+                    <y>90</y>
+                    <width>101</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Dauerapparat</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_8">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>110</y>
+                    <width>71</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Mail</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="prof_mail">
+                  <property name="geometry">
+                   <rect>
+                    <x>110</x>
+                    <y>110</y>
+                    <width>121</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhEmailCharactersOnly</set>
+                  </property>
+                  <property name="maxLength">
+                   <number>200</number>
+                  </property>
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_9">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>130</y>
+                    <width>71</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Tel</string>
+                  </property>
+                 </widget>
+                 <widget class="QLineEdit" name="prof_tel_nr">
+                  <property name="geometry">
+                   <rect>
+                    <x>110</x>
+                    <y>130</y>
+                    <width>121</width>
+                    <height>20</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhDigitsOnly</set>
+                  </property>
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_10">
+                  <property name="geometry">
+                   <rect>
+                    <x>470</x>
+                    <y>20</y>
+                    <width>51</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Fach</string>
+                  </property>
+                 </widget>
+                 <widget class="QComboBox" name="drpdwn_prof_name">
+                  <property name="geometry">
+                   <rect>
+                    <x>110</x>
+                    <y>80</y>
+                    <width>121</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>8</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="editable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="currentText">
+                   <string/>
+                  </property>
+                  <property name="insertPolicy">
+                   <enum>QComboBox::InsertAlphabetically</enum>
+                  </property>
+                  <property name="frame">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="mail_mand">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>110</y>
+                    <width>47</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>*</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="telnr_mand">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>130</y>
+                    <width>47</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>*</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="profname_mand">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>80</y>
+                    <width>47</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>*</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="appname_mand">
+                  <property name="geometry">
+                   <rect>
+                    <x>330</x>
+                    <y>20</y>
+                    <width>16</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>*</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="fach_mand">
+                  <property name="geometry">
+                   <rect>
+                    <x>500</x>
+                    <y>20</y>
+                    <width>47</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="text">
+                   <string>*</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="_mand">
+                  <property name="geometry">
+                   <rect>
+                    <x>330</x>
+                    <y>60</y>
+                    <width>16</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>*</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_add_document">
+                  <property name="geometry">
+                   <rect>
+                    <x>1090</x>
+                    <y>20</y>
+                    <width>131</width>
+                    <height>25</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Dokument hinzufügen</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="btn_open_document">
+                  <property name="geometry">
+                   <rect>
+                    <x>1090</x>
+                    <y>60</y>
+                    <width>131</width>
+                    <height>25</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Dokument öffnen</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="check_file">
+                  <property name="geometry">
+                   <rect>
+                    <x>1090</x>
+                    <y>100</y>
+                    <width>131</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string>Abhängig von der Anzahl der Medien kann die Suche sehr lange dauern</string>
+                  </property>
+                  <property name="text">
+                   <string>Medien aus Dokument
+ hinzufügen</string>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="formLayoutWidget_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>550</x>
+                    <y>70</y>
+                    <width>202</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <layout class="QFormLayout" name="formLayout_3">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_12">
+                     <property name="font">
+                      <font>
+                       <pointsize>9</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Prof-ID-aDIS</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="prof_id_adis">
+                     <property name="font">
+                      <font>
+                       <pointsize>9</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="font">
+                      <font>
+                       <pointsize>9</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Apparat-ID-aDIS</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="apparat_id_adis"/>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QCheckBox" name="check_send_mail">
+                  <property name="geometry">
+                   <rect>
+                    <x>450</x>
+                    <y>120</y>
+                    <width>91</width>
+                    <height>17</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>9</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Mail senden</string>
+                  </property>
+                 </widget>
+                 <widget class="QFrame" name="frame_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>510</x>
+                    <y>0</y>
+                    <width>241</width>
+                    <height>61</height>
+                   </rect>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QWidget" name="gridLayoutWidget_5">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>241</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_6">
+                    <item row="0" column="0">
+                     <widget class="QComboBox" name="app_fach"/>
+                    </item>
+                    <item row="0" column="1">
+                     <spacer name="horizontalSpacer_7">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                 <zorder>_mand</zorder>
+                 <zorder>drpdwn_prof_title</zorder>
+                 <zorder>label_5</zorder>
+                 <zorder>sem_winter</zorder>
+                 <zorder>label_4</zorder>
+                 <zorder>drpdwn_app_nr</zorder>
+                 <zorder>sem_sommer</zorder>
+                 <zorder>label_3</zorder>
+                 <zorder>label_6</zorder>
+                 <zorder>sem_year</zorder>
+                 <zorder>label_2</zorder>
+                 <zorder>btn_apparat_save</zorder>
+                 <zorder>btn_apparat_apply</zorder>
+                 <zorder>check_eternal_app</zorder>
+                 <zorder>label_8</zorder>
+                 <zorder>label_9</zorder>
+                 <zorder>label_10</zorder>
+                 <zorder>mail_mand</zorder>
+                 <zorder>telnr_mand</zorder>
+                 <zorder>profname_mand</zorder>
+                 <zorder>appname_mand</zorder>
+                 <zorder>fach_mand</zorder>
+                 <zorder>btn_add_document</zorder>
+                 <zorder>btn_open_document</zorder>
+                 <zorder>app_name</zorder>
+                 <zorder>prof_tel_nr</zorder>
+                 <zorder>drpdwn_prof_name</zorder>
+                 <zorder>prof_mail</zorder>
+                 <zorder>check_file</zorder>
+                 <zorder>formLayoutWidget_2</zorder>
+                 <zorder>check_send_mail</zorder>
+                 <zorder>frame_3</zorder>
+                </widget>
+                <zorder>frame</zorder>
+                <zorder>dokument_list</zorder>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="QTableWidget" name="tableWidget_apparat_media">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>1259</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="contextMenuPolicy">
+                 <enum>Qt::CustomContextMenu</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <attribute name="horizontalHeaderCascadingSectionResizes">
+                 <bool>true</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>Buchtitel</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Signatur</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Auflage</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Autor</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>verfügbar?</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Vorgemerkt</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Link</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>  Medienliste</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="chkbx_show_del_media">
+                  <property name="text">
+                   <string>gel. Medien anzeigen</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_reserve">
+                  <property name="text">
+                   <string>im Apparat?</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="add_layout">
+                  <item>
+                   <widget class="QLabel" name="label_info">
+                    <property name="text">
+                     <string>Medien werden hinzugefügt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="Line" name="line_2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="progress_label">
+                    <property name="text">
+                     <string>Medium x/y</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="avail_layout"/>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_20">
+                  <property name="text">
+                   <string>Medien werden geprüft</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line_3">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="avail_status">
+                  <property name="text">
+                   <string>TextLabel</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QPushButton" name="add_medium">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>700</y>
+               <width>121</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>Medien hinzufügen</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tab_2">
+            <attribute name="title">
+             <string>Suchen / Statistik</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>1251</width>
+               <height>721</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QTabWidget" name="tabWidget_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="title">
+                  <string>Statistik</string>
+                 </attribute>
+                 <widget class="QPushButton" name="btn_search">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>180</y>
+                    <width>75</width>
+                    <height>23</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string>Suchen</string>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="gridLayoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>491</width>
+                    <height>161</height>
+                   </rect>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_3">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="text">
+                      <string>Appnr.:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="3">
+                    <widget class="QComboBox" name="box_erstellsemester">
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="2">
+                    <widget class="QLabel" name="label_18">
+                     <property name="text">
+                      <string>Dauerapp:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_17">
+                     <property name="text">
+                      <string>Endsemester:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QLabel" name="label_19">
+                     <property name="text">
+                      <string>Erstellsemester:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="3">
+                    <widget class="QComboBox" name="box_dauerapp"/>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>Person:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_16">
+                     <property name="text">
+                      <string>Fach:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="3">
+                    <widget class="QComboBox" name="box_semester">
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="box_appnrs">
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QComboBox" name="box_fach">
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QComboBox" name="box_person">
+                     <property name="editable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <spacer name="verticalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QLabel" name="label_15">
+                     <property name="text">
+                      <string>Löschbar</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QCheckBox" name="check_deletable">
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QLabel" name="db_err_message">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>180</y>
+                    <width>401</width>
+                    <height>23</height>
+                   </rect>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_4">
+                 <attribute name="title">
+                  <string>Suchen</string>
+                 </attribute>
+                 <widget class="QWidget" name="formLayoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>451</width>
+                    <height>151</height>
+                   </rect>
+                  </property>
+                  <layout class="QFormLayout" name="formLayout_6">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_25">
+                     <property name="text">
+                      <string>Signatur</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QPushButton" name="book_search">
+                     <property name="text">
+                      <string>Suche</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLineEdit" name="seach_by_signature">
+                     <property name="clearButtonEnabled">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_26">
+                     <property name="text">
+                      <string>Titel</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLineEdit" name="search_by_title">
+                     <property name="clearButtonEnabled">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <spacer name="verticalSpacer_4">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QStackedWidget" name="stackedWidget_4">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QWidget" name="stackedWidget_4Page1">
+                 <widget class="QTabWidget" name="tabWidget_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>780</x>
+                    <y>10</y>
+                    <width>441</width>
+                    <height>441</height>
+                   </rect>
+                  </property>
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <widget class="QWidget" name="tab_6">
+                   <attribute name="title">
+                    <string>Tabelle</string>
+                   </attribute>
+                   <widget class="QWidget" name="gridLayoutWidget_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>431</width>
+                      <height>411</height>
+                     </rect>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_4">
+                     <item row="0" column="0">
+                      <widget class="QTableWidget" name="statistics_table">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="focusPolicy">
+                        <enum>Qt::NoFocus</enum>
+                       </property>
+                       <property name="editTriggers">
+                        <set>QAbstractItemView::NoEditTriggers</set>
+                       </property>
+                       <property name="alternatingRowColors">
+                        <bool>true</bool>
+                       </property>
+                       <attribute name="horizontalHeaderCascadingSectionResizes">
+                        <bool>true</bool>
+                       </attribute>
+                       <attribute name="horizontalHeaderDefaultSectionSize">
+                        <number>59</number>
+                       </attribute>
+                       <attribute name="horizontalHeaderMinimumSectionSize">
+                        <number>24</number>
+                       </attribute>
+                       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                        <bool>true</bool>
+                       </attribute>
+                       <attribute name="horizontalHeaderStretchLastSection">
+                        <bool>false</bool>
+                       </attribute>
+                       <column>
+                        <property name="text">
+                         <string>Semester</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Zugang</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Abgang</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="tab_7">
+                   <attribute name="title">
+                    <string>Erstellte und gelöschte Semesterapparate</string>
+                   </attribute>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>761</width>
+                    <height>441</height>
+                   </rect>
+                  </property>
+                  <widget class="QWidget" name="horizontalLayoutWidget_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>761</width>
+                     <height>51</height>
+                    </rect>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QPushButton" name="btn_del_select_apparats">
+                      <property name="focusPolicy">
+                       <enum>Qt::StrongFocus</enum>
+                      </property>
+                      <property name="text">
+                       <string>Ausgewählte Löschen</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_5">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="table" native="true">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>50</y>
+                     <width>761</width>
+                     <height>391</height>
+                    </rect>
+                   </property>
+                   <widget class="QTableWidget" name="tableWidget">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>761</width>
+                      <height>391</height>
+                     </rect>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="editTriggers">
+                     <set>QAbstractItemView::NoEditTriggers</set>
+                    </property>
+                    <column>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Apparatsname</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Apparatsnummer</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Person</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Fach</string>
+                     </property>
+                    </column>
+                   </widget>
+                  </widget>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="page">
+                 <widget class="QTableWidget" name="book_search_result">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>1081</width>
+                    <height>421</height>
+                   </rect>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Plain</enum>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::NoEditTriggers</set>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <attribute name="horizontalHeaderCascadingSectionResizes">
+                   <bool>true</bool>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string>Titel</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Signatur</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Apparat</string>
+                   </property>
+                  </column>
+                 </widget>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="tab_5">
+            <attribute name="title">
+             <string>Admin</string>
+            </attribute>
+            <widget class="QLabel" name="label_21">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>47</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Aktion:</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="select_action_box">
+             <property name="geometry">
+              <rect>
+               <x>70</x>
+               <y>30</y>
+               <width>181</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <item>
+              <property name="text">
+               <string>Nutzer anlegen</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nutzer löschen</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Nutzer aktualisieren</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Lehrperson bearbeiten</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QFrame" name="user_create_frame">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>591</width>
+               <height>141</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QWidget" name="gridLayoutWidget_4">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>581</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_22">
+                 <property name="text">
+                  <string>Nutzername</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="user_create_frame_username">
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_24">
+                 <property name="text">
+                  <string>Rolle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_23">
+                 <property name="text">
+                  <string>Passwort</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="3">
+                <widget class="QComboBox" name="user_frame_userrole"/>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="user_create_frame_password">
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QPushButton" name="user_frame_addUser">
+                 <property name="text">
+                  <string>Anlegen</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLabel" name="user_frame_err_message">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="user_delete_frame">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>591</width>
+               <height>141</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QWidget" name="gridLayoutWidget_7">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>581</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="1" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <spacer name="horizontalSpacer_10">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string>Nutzer löschen</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_34">
+                 <property name="text">
+                  <string>Nutzername</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="user_delete_frame_user_select"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QRadioButton" name="user_delete_confirm">
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="text">
+                  <string>Wirklich löschen?</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <spacer name="horizontalSpacer_12">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="user_delete_err_message">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="user_edit_frame">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>591</width>
+               <height>141</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QWidget" name="gridLayoutWidget_10">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>581</width>
+                <height>141</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="3">
+                <widget class="QComboBox" name="user_edit_frame_role_select"/>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_38">
+                 <property name="text">
+                  <string>Nutzername</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="user_edit_frame_user_select">
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QPushButton" name="update_user">
+                 <property name="text">
+                  <string>Aktualisieren</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_40">
+                 <property name="text">
+                  <string>Rolle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_39">
+                 <property name="text">
+                  <string>Neues Passwort</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="user_edit_frame_new_password">
+                 <property name="maximumSize">
+                  <size>
+                   <width>150</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <spacer name="horizontalSpacer_14">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="edit_faculty_member">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>1051</width>
+               <height>191</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QWidget" name="gridLayoutWidget_11">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>751</width>
+                <height>223</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_12">
+               <item row="2" column="2">
+                <layout class="QFormLayout" name="formLayout_2">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_43">
+                   <property name="text">
+                    <string>Titel</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="edit_faculty_member_new_title"/>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_44">
+                   <property name="text">
+                    <string>Vorname</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="edit_faculty_member_new_surname"/>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_45">
+                   <property name="text">
+                    <string>Nachname</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="user_faculty_member_new_name"/>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="2">
+                <layout class="QFormLayout" name="formLayout_4">
+                 <item row="0" column="0">
+                  <widget class="QLineEdit" name="edit_faculty_member_title">
+                   <property name="focusPolicy">
+                    <enum>Qt::TabFocus</enum>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="edit_faculty_member_select_member"/>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_46">
+                   <property name="text">
+                    <string>Telefonnummer</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="faculty_member_old_telnr">
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_49">
+                   <property name="text">
+                    <string>Mail</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLineEdit" name="faculty_member_oldmail">
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="inputMethodHints">
+                    <set>Qt::ImhNone</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="2" column="4">
+                <layout class="QFormLayout" name="formLayout_5">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_47">
+                   <property name="text">
+                    <string>Mail</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_48">
+                   <property name="text">
+                    <string>Telefon</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lineEdit"/>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="lineEdit_5"/>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_41">
+                 <property name="text">
+                  <string>Alte Angaben</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="4">
+                <widget class="QPushButton" name="update_faculty_member">
+                 <property name="text">
+                  <string>Aktualisieren</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_42">
+                 <property name="text">
+                  <string>Neue Angaben</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>360</y>
+      <width>311</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QFrame" name="frame_creation_progress">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Software</string>
+          </property>
+          <widget class="QCheckBox" name="appdata_check">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>241</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Apparatsdaten eingegeben</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="media_check">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>241</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Medien hinzugefügt / importiert</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="ids_check">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>140</y>
+             <width>241</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Prof-ID und Apparat-ID eingetragen</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>aDIS</string>
+          </property>
+          <widget class="QCheckBox" name="media_checked">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>241</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+             <underline>false</underline>
+             <stylestrategy>PreferDefault</stylestrategy>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Medien geprüft</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="media_edited_check">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>241</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+             <underline>false</underline>
+             <stylestrategy>PreferDefault</stylestrategy>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Medien bearbeitet</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="app_created">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>110</y>
+             <width>161</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+             <underline>false</underline>
+             <stylestrategy>PreferDefault</stylestrategy>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>Apparat angelegt</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_copy_adis_command">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>120</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+             <underline>false</underline>
+             <stylestrategy>PreferDefault</stylestrategy>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Hier klicken, um die aDIS Abfrage in die Zwischenablage zu kopieren</string>
+           </property>
+           <property name="statusTip">
+            <string/>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="accessibleDescription">
+            <string/>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string> aDIS Abfrage</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../.designer/backup/icons/information.png</normaloff>../../../.designer/backup/icons/information.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>10</y>
+      <width>301</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QCalendarWidget" name="calendarWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>291</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="gridVisible">
+      <bool>true</bool>
+     </property>
+     <property name="verticalHeaderFormat">
+      <enum>QCalendarWidget::NoVerticalHeader</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="message_frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>210</y>
+       <width>301</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>47</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Apparat</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_app_info">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="message_box">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>281</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_delete_message">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>Löschen</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_select_message">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>74</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_total_day_messages">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>21</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1593</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuEinstellungen">
+    <property name="title">
+     <string>Bearbeiten</string>
+    </property>
+    <addaction name="actionEinstellungen"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuEinstellungen"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBeenden">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionEinstellungen">
+   <property name="text">
+    <string>Einstellungen</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>drpdwn_app_nr</tabstop>
+  <tabstop>drpdwn_prof_title</tabstop>
+  <tabstop>drpdwn_prof_name</tabstop>
+  <tabstop>prof_mail</tabstop>
+  <tabstop>prof_tel_nr</tabstop>
+  <tabstop>app_name</tabstop>
+  <tabstop>sem_year</tabstop>
+  <tabstop>check_eternal_app</tabstop>
+  <tabstop>btn_add_document</tabstop>
+  <tabstop>btn_open_document</tabstop>
+  <tabstop>check_file</tabstop>
+  <tabstop>btn_apparat_save</tabstop>
+  <tabstop>btn_apparat_apply</tabstop>
+  <tabstop>check_send_mail</tabstop>
+  <tabstop>chkbx_show_del_media</tabstop>
+  <tabstop>btn_reserve</tabstop>
+  <tabstop>prof_id_adis</tabstop>
+  <tabstop>apparat_id_adis</tabstop>
+  <tabstop>tabWidget_2</tabstop>
+  <tabstop>btn_del_select_apparats</tabstop>
+  <tabstop>tabWidget_3</tabstop>
+  <tabstop>select_action_box</tabstop>
+  <tabstop>user_create_frame_username</tabstop>
+  <tabstop>user_frame_userrole</tabstop>
+  <tabstop>user_create_frame_password</tabstop>
+  <tabstop>user_frame_addUser</tabstop>
+  <tabstop>user_delete_frame_user_select</tabstop>
+  <tabstop>user_delete_confirm</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>user_edit_frame_user_select</tabstop>
+  <tabstop>user_edit_frame_role_select</tabstop>
+  <tabstop>user_edit_frame_new_password</tabstop>
+  <tabstop>update_user</tabstop>
+  <tabstop>edit_faculty_member_title</tabstop>
+  <tabstop>edit_faculty_member_select_member</tabstop>
+  <tabstop>faculty_member_old_telnr</tabstop>
+  <tabstop>faculty_member_oldmail</tabstop>
+  <tabstop>edit_faculty_member_new_title</tabstop>
+  <tabstop>edit_faculty_member_new_surname</tabstop>
+  <tabstop>user_faculty_member_new_name</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_5</tabstop>
+  <tabstop>update_faculty_member</tabstop>
+  <tabstop>box_fach</tabstop>
+  <tabstop>box_person</tabstop>
+  <tabstop>btn_search</tabstop>
+  <tabstop>check_deletable</tabstop>
+  <tabstop>box_erstellsemester</tabstop>
+  <tabstop>box_semester</tabstop>
+  <tabstop>box_dauerapp</tabstop>
+  <tabstop>box_appnrs</tabstop>
+  <tabstop>btn_copy_adis_command</tabstop>
+  <tabstop>spin_select_message</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
